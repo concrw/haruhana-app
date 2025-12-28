@@ -1,30 +1,67 @@
 {
   "expo": {
-    "name": "haruhana",
+    "name": "하루하나",
     "slug": "haruhana",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
+    "scheme": "haruhana",
+    "entryPoint": "index.ts",
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#FFF9F0"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.haruhana.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "의식 완료 사진을 찍기 위해 카메라 권한이 필요합니다.",
+        "NSPhotoLibraryUsageDescription": "의식 완료 사진을 선택하기 위해 갤러리 권한이 필요합니다.",
+        "NSMicrophoneUsageDescription": "음성 메모를 녹음하기 위해 마이크 권한이 필요합니다.",
+        "NSSpeechRecognitionUsageDescription": "음성 인식 기능을 위해 권한이 필요합니다.",
+        "NSMotionUsageDescription": "걸음 수를 자동으로 측정하기 위해 센서 권한이 필요합니다."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#FFF9F0"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.haruhana.app",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.VIBRATE",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.ACTIVITY_RECOGNITION"
+      ]
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro",
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#FF9E5A"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "haruhana-app"
+      }
     }
   }
 }
