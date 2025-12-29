@@ -93,8 +93,17 @@ export default function RegisterScreen() {
 
   const handleRegister = async () => {
     try {
-      await register({ name, email });
-      router.replace('/auth/onboarding');
+      const success = await register({
+        name,
+        email,
+        password,
+        birthDate: birthYear ? new Date(`${birthYear}-01-01`) : undefined,
+      });
+      if (success) {
+        router.replace('/auth/onboarding');
+      } else {
+        Alert.alert('회원가입 실패', '다시 시도해주세요');
+      }
     } catch (error) {
       Alert.alert('회원가입 실패', '다시 시도해주세요');
     }

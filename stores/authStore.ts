@@ -28,7 +28,8 @@ interface AuthState {
   setError: (error: string | null) => void;
 
   // Auth actions
-  login: (phone: string, otp: string) => Promise<boolean>;
+  login: (email: string, password: string) => Promise<boolean>;
+  loginWithOtp: (phone: string, otp: string) => Promise<boolean>;
   logout: () => Promise<void>;
   register: (data: Partial<User> & { password?: string }) => Promise<boolean>;
   updateProfile: (data: Partial<User>) => Promise<boolean>;
@@ -73,7 +74,58 @@ export const useAuthStore = create<AuthState>()(
       setError: (error) => set({ error }),
 
       // Auth actions
-      login: async (phone, otp) => {
+      login: async (email, password) => {
+        set({ isLoading: true, error: null });
+        try {
+          const { data: authData, error: authError } = await supabase.auth.signInWithPassword({
+            email,
+            password,
+          });
+
+          if (authError) throw authError;
+          if (!authData.user) throw new Error('사용자 정보를 가져올 수 없어요.');
+
+          // Get user profile from database
+          const { data: userData, error: userError } = await supabase
+            .from('users')
+            .select('*')
+            .eq('id', authData.user.id)
+            .single();
+
+          if (userError) throw userError;
+
+          const user: User = {
+            id: userData.id,
+            phone: userData.phone,
+            email: userData.email,
+            name: userData.name,
+            birthDate: userData.birth_date ? new Date(userData.birth_date) : null,
+            role: userData.role as UserRole,
+            avatarUrl: userData.avatar_url,
+            voicePreference: userData.voice_preference as VoicePreference,
+            fontSize: userData.font_size as FontSize,
+            createdAt: new Date(userData.created_at),
+            updatedAt: new Date(userData.updated_at),
+          };
+
+          set({
+            user,
+            isAuthenticated: true,
+            isLoading: false,
+          });
+
+          return true;
+        } catch (error) {
+          console.error('Login error:', error);
+          set({
+            error: '로그인에 실패했어요. 다시 시도해주세요.',
+            isLoading: false,
+          });
+          return false;
+        }
+      },
+
+      loginWithOtp: async (phone, otp) => {
         set({ isLoading: true, error: null });
         try {
           const { data: authData, error: authError } = await supabase.auth.verifyOtp({
@@ -116,7 +168,7 @@ export const useAuthStore = create<AuthState>()(
 
           return true;
         } catch (error) {
-          console.error('Login error:', error);
+          console.error('Login with OTP error:', error);
           set({
             error: '로그인에 실패했어요. 다시 시도해주세요.',
             isLoading: false,
