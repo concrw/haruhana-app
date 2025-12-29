@@ -208,7 +208,14 @@ export const useAuthStore = create<AuthState>()(
           if (data.email) {
             const { data: signUpData, error: signUpError } = await supabase.auth.signUp({
               email: data.email,
-              password: data.password || Math.random().toString(36).slice(-8), // Generate random password if not provided
+              password: data.password || Math.random().toString(36).slice(-8),
+              options: {
+                data: {
+                  name: data.name || onboardingData.name || '',
+                  role: onboardingData.role || 'senior',
+                  birth_date: data.birthDate?.toISOString().split('T')[0] || onboardingData.birthDate?.toISOString().split('T')[0] || null,
+                },
+              },
             });
             if (signUpError) throw signUpError;
             authData = signUpData;
@@ -217,8 +224,6 @@ export const useAuthStore = create<AuthState>()(
               phone: data.phone,
             });
             if (signUpError) throw signUpError;
-            // For phone sign up, we need to wait for OTP verification
-            // This will be handled in the login flow
             set({ isLoading: false });
             return true;
           } else {
@@ -227,29 +232,56 @@ export const useAuthStore = create<AuthState>()(
 
           if (!authData.user) throw new Error('회원가입에 실패했어요.');
 
-          // Create user profile in database
+          // Try to create user profile (may be created by trigger)
           const { error: insertError } = await supabase.from('users').insert({
             id: authData.user.id,
             phone: data.phone || null,
             email: data.email || null,
             name: data.name || onboardingData.name,
-            birth_date: onboardingData.birthDate?.toISOString().split('T')[0] || null,
+            birth_date: data.birthDate?.toISOString().split('T')[0] || onboardingData.birthDate?.toISOString().split('T')[0] || null,
             role: onboardingData.role || 'senior',
             voice_preference: onboardingData.voicePreference,
             font_size: 'large',
             onboarding_completed: false,
           });
 
-          if (insertError) throw insertError;
+          // Ignore insert error if profile was created by trigger
+          if (insertError && !insertError.message.includes('duplicate')) {
+            console.warn('Profile insert warning:', insertError.message);
+          }
 
-          // Get the created user profile
+          // Wait a bit for trigger to create profile if needed
+          await new Promise(resolve => setTimeout(resolve, 500));
+
+          // Get the user profile (created by trigger or insert)
           const { data: userData, error: userError } = await supabase
             .from('users')
             .select('*')
             .eq('id', authData.user.id)
             .single();
 
-          if (userError) throw userError;
+          if (userError) {
+            // If no profile exists, create a local user object
+            const newUser: User = {
+              id: authData.user.id,
+              phone: data.phone || null,
+              email: data.email || null,
+              name: data.name || onboardingData.name || '',
+              birthDate: data.birthDate || onboardingData.birthDate || null,
+              role: (onboardingData.role || 'senior') as UserRole,
+              avatarUrl: null,
+              voicePreference: onboardingData.voicePreference as VoicePreference,
+              fontSize: 'large' as FontSize,
+              createdAt: new Date(),
+              updatedAt: new Date(),
+            };
+            set({
+              user: newUser,
+              isAuthenticated: true,
+              isLoading: false,
+            });
+            return true;
+          }
 
           const newUser: User = {
             id: userData.id,
