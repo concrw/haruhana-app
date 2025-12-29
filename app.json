@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "하루하나",
-    "slug": "haruhana",
+    "name": "안녕",
+    "slug": "welling",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
-    "scheme": "haruhana",
+    "scheme": "welling",
     "entryPoint": "index.ts",
     "splash": {
       "image": "./assets/splash-icon.png",
