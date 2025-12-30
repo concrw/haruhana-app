@@ -24,14 +24,14 @@ async function testConnection() {
     console.log('1️⃣ 시스템 의식 데이터 확인...');
     const { data: rituals, error: ritualsError } = await supabase
       .from('rituals')
-      .select('name, category, emoji')
+      .select('title, category, icon')
       .eq('is_system', true);
 
     if (ritualsError) {
       console.error('❌ Rituals 테이블 에러:', ritualsError.message);
     } else {
       console.log(`✅ 시스템 의식 ${rituals?.length || 0}개 발견:`);
-      rituals?.forEach((r) => console.log(`   ${r.emoji} ${r.name} (${r.category})`));
+      rituals?.forEach((r) => console.log(`   ${r.icon} ${r.title} (${r.category})`));
     }
 
     // 2. Users 테이블 구조 확인
