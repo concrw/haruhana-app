@@ -6,7 +6,6 @@ import {
   GoNoGoMetrics,
   NBackMetrics,
   TaskSwitchMetrics,
-  GameResult,
   SortingRule,
 } from '../types/game';
 import { FruitId } from '../constants/fruits';

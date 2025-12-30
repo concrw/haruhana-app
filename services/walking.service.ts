@@ -6,7 +6,7 @@
 import { Pedometer } from 'expo-sensors';
 import { Platform } from 'react-native';
 import { STRIDE_COEFFICIENTS, DEFAULT_STRIDE_LENGTH } from '../constants/walking';
-import type { WalkingSession, DailySteps } from '../types/walking';
+import type { DailySteps } from '../types/walking';
 
 export class WalkingService {
   private subscription: { remove: () => void } | null = null;

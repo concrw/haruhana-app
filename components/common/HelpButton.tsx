@@ -6,7 +6,6 @@ import {
   View,
   Modal,
   Animated,
-  PanResponder,
 } from 'react-native';
 import { COLORS } from '../../constants/colors';
 import { LAYOUT } from '../../constants/layout';

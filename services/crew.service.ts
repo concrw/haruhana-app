@@ -5,7 +5,6 @@
 
 import { INVITE_CODE_LENGTH, CREW_LIMITS } from '../constants/crew';
 import type {
-  Crew,
   CrewMember,
   CrewStats,
   CrewLeaderboardEntry,
