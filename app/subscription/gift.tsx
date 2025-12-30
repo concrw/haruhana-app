@@ -377,7 +377,7 @@ const styles = StyleSheet.create({
     borderRadius: LAYOUT.radius.sm,
   },
   recommendBadgeText: {
-    fontSize: TYPOGRAPHY.fontSize.xs,
+    fontSize: TYPOGRAPHY.fontSize.sm,
     fontWeight: '700',
     color: COLORS.white,
   },
@@ -396,7 +396,7 @@ const styles = StyleSheet.create({
     color: COLORS.textDark,
   },
   discountBadge: {
-    fontSize: TYPOGRAPHY.fontSize.xs,
+    fontSize: TYPOGRAPHY.fontSize.sm,
     fontWeight: '600',
     color: COLORS.apple,
     backgroundColor: COLORS.appleLight,

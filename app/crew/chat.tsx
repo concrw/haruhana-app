@@ -350,7 +350,7 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',
   },
   senderName: {
-    fontSize: TYPOGRAPHY.fontSize.xs,
+    fontSize: TYPOGRAPHY.fontSize.sm,
     color: COLORS.textGray,
     marginBottom: LAYOUT.spacing.xs,
     marginLeft: LAYOUT.spacing.xs,
@@ -375,7 +375,7 @@ const styles = StyleSheet.create({
     color: COLORS.textDark,
   },
   messageTime: {
-    fontSize: TYPOGRAPHY.fontSize.xs,
+    fontSize: TYPOGRAPHY.fontSize.sm,
     color: COLORS.textLight,
     marginTop: LAYOUT.spacing.xs,
     marginLeft: LAYOUT.spacing.xs,

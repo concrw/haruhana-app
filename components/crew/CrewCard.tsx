@@ -198,7 +198,7 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.lemonLight,
   },
   roleBadgeText: {
-    fontSize: TYPOGRAPHY.fontSize.xs,
+    fontSize: TYPOGRAPHY.fontSize.sm,
     fontWeight: '600',
     color: COLORS.textDark,
   },
@@ -244,7 +244,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   moreAvatarText: {
-    fontSize: TYPOGRAPHY.fontSize.xs,
+    fontSize: TYPOGRAPHY.fontSize.sm,
     fontWeight: '600',
     color: COLORS.textGray,
   },

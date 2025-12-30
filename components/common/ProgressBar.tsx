@@ -185,7 +185,7 @@ const styles = StyleSheet.create({
     minWidth: 48,
   },
   insideLabel: {
-    fontSize: TYPOGRAPHY.fontSize.xs,
+    fontSize: TYPOGRAPHY.fontSize.sm,
     color: COLORS.white,
     fontWeight: '600',
   },

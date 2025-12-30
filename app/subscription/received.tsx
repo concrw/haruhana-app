@@ -247,7 +247,7 @@ const styles = StyleSheet.create({
     borderRadius: LAYOUT.radius.sm,
   },
   newBadgeText: {
-    fontSize: TYPOGRAPHY.fontSize.xs,
+    fontSize: TYPOGRAPHY.fontSize.sm,
     fontWeight: '700',
     color: COLORS.white,
   },
@@ -278,7 +278,7 @@ const styles = StyleSheet.create({
   },
   expiryInfo: {},
   expiryLabel: {
-    fontSize: TYPOGRAPHY.fontSize.xs,
+    fontSize: TYPOGRAPHY.fontSize.sm,
     color: COLORS.textGray,
   },
   expiryValue: {
@@ -323,7 +323,7 @@ const styles = StyleSheet.create({
     color: COLORS.textGray,
   },
   giftDate: {
-    fontSize: TYPOGRAPHY.fontSize.xs,
+    fontSize: TYPOGRAPHY.fontSize.sm,
     color: COLORS.textLight,
     textAlign: 'right',
     marginTop: LAYOUT.spacing.md,

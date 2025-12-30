@@ -313,7 +313,7 @@ const styles = StyleSheet.create({
     color: COLORS.textDark,
   },
   statLabel: {
-    fontSize: TYPOGRAPHY.fontSize.xs,
+    fontSize: TYPOGRAPHY.fontSize.sm,
     color: COLORS.textGray,
   },
 

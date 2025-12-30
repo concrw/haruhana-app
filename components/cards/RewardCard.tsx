@@ -273,7 +273,7 @@ const styles = StyleSheet.create({
     color: COLORS.textGray,
   },
   date: {
-    fontSize: TYPOGRAPHY.fontSize.xs,
+    fontSize: TYPOGRAPHY.fontSize.sm,
     color: COLORS.white,
     opacity: 0.8,
     marginTop: LAYOUT.spacing.xs,

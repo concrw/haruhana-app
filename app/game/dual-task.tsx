@@ -623,7 +623,7 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.grapeLight,
   },
   badgeLabel: {
-    fontSize: TYPOGRAPHY.fontSize.xs,
+    fontSize: TYPOGRAPHY.fontSize.sm,
     color: COLORS.textGray,
   },
   targetBadgeEmoji: {

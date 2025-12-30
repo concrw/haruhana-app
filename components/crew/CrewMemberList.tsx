@@ -309,7 +309,7 @@ const styles = StyleSheet.create({
     marginTop: LAYOUT.spacing.xs,
   },
   statBadge: {
-    fontSize: TYPOGRAPHY.fontSize.xs,
+    fontSize: TYPOGRAPHY.fontSize.sm,
     color: COLORS.textGray,
     backgroundColor: COLORS.backgroundLight,
     paddingVertical: 2,

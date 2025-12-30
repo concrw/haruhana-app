@@ -371,7 +371,7 @@ const styles = StyleSheet.create({
     borderRadius: 3,
   },
   timeText: {
-    fontSize: TYPOGRAPHY.fontSize.xs,
+    fontSize: TYPOGRAPHY.fontSize.sm,
     color: COLORS.textGray,
     marginTop: LAYOUT.spacing.xs,
   },
