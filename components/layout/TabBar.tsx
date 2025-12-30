@@ -166,7 +166,7 @@ const styles = StyleSheet.create({
     opacity: 1,
   },
   label: {
-    fontSize: TYPOGRAPHY.fontSize.xs,
+    fontSize: TYPOGRAPHY.fontSize.sm,
     color: COLORS.textGray,
     marginTop: LAYOUT.spacing.xs,
   },
@@ -187,7 +187,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 4,
   },
   badgeText: {
-    fontSize: 10,
+    fontSize: TYPOGRAPHY.fontSize.xs,
     color: COLORS.white,
     fontWeight: '700',
   },
