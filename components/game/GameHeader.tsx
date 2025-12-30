@@ -147,8 +147,8 @@ const styles = StyleSheet.create({
     gap: LAYOUT.spacing.md,
   },
   exitButton: {
-    width: 44,
-    height: 44,
+    width: LAYOUT.touchTarget.recommended,
+    height: LAYOUT.touchTarget.recommended,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -171,7 +171,7 @@ const styles = StyleSheet.create({
     color: COLORS.white,
   },
   rightElement: {
-    minWidth: 44,
+    minWidth: LAYOUT.touchTarget.recommended,
     alignItems: 'flex-end',
   },
   scoreHeader: {
@@ -201,8 +201,8 @@ const styles = StyleSheet.create({
     fontSize: TYPOGRAPHY.fontSize.lg,
   },
   pauseButton: {
-    width: 44,
-    height: 44,
+    width: LAYOUT.touchTarget.recommended,
+    height: LAYOUT.touchTarget.recommended,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -240,9 +240,9 @@ const styles = StyleSheet.create({
     color: COLORS.textGray,
   },
   targetBadge: {
-    width: 44,
-    height: 44,
-    borderRadius: 22,
+    width: LAYOUT.touchTarget.recommended,
+    height: LAYOUT.touchTarget.recommended,
+    borderRadius: LAYOUT.touchTarget.recommended / 2,
     backgroundColor: COLORS.backgroundCream,
     alignItems: 'center',
     justifyContent: 'center',
