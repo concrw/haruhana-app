@@ -47,6 +47,9 @@ const BUTTON_SIZES = {
   },
 };
 
+// 밝은 배경색에서는 어두운 텍스트 사용 (WCAG 7:1 대비)
+const DARK_TEXT_VARIANTS: FruitType[] = ['lemon', 'orange'];
+
 export const FruitButton: React.FC<FruitButtonProps> = ({
   variant,
   label,
@@ -62,6 +65,7 @@ export const FruitButton: React.FC<FruitButtonProps> = ({
   const fruitColor = FRUIT_COLORS[variant];
   const fruitInfo = FRUITS[variant as keyof typeof FRUITS];
   const sizeConfig = BUTTON_SIZES[size];
+  const useDarkText = DARK_TEXT_VARIANTS.includes(variant);
 
   const buttonStyles: ViewStyle[] = [
     styles.button,
@@ -84,7 +88,7 @@ export const FruitButton: React.FC<FruitButtonProps> = ({
       hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
     >
       {loading ? (
-        <ActivityIndicator color={COLORS.white} size="small" />
+        <ActivityIndicator color={useDarkText ? COLORS.textDark : COLORS.white} size="small" />
       ) : (
         <View style={styles.content}>
           {showEmoji && fruitInfo && (
@@ -96,6 +100,7 @@ export const FruitButton: React.FC<FruitButtonProps> = ({
             style={[
               styles.label,
               { fontSize: sizeConfig.fontSize },
+              useDarkText && styles.darkText,
               disabled && styles.disabledText,
               textStyle,
             ]}
@@ -139,6 +144,9 @@ const styles = StyleSheet.create({
     color: COLORS.white,
     fontWeight: '600',
     textAlign: 'center',
+  },
+  darkText: {
+    color: COLORS.textDark,
   },
   disabledText: {
     color: COLORS.textLight,
