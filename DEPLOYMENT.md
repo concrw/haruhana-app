@@ -1,4 +1,4 @@
-# 하루하나 (Haruhana) 배포 가이드
+# 안녕 (WELLING) 배포 가이드
 
 ## 📋 목차
 1. [사전 준비](#사전-준비)
@@ -36,7 +36,7 @@ npm install -g expo-cli
 
 ### 1. 프로젝트 생성
 1. [Supabase Dashboard](https://app.supabase.com/)에서 새 프로젝트 생성
-2. 프로젝트 이름: `haruhana`
+2. 프로젝트 이름: `welling`
 3. 데이터베이스 비밀번호 설정 및 저장
 
 ### 2. 데이터베이스 스키마 적용
@@ -65,7 +65,7 @@ EXPO_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
 EXPO_PUBLIC_SUPABASE_ANON_KEY=your-anon-key-here
 
 # App Configuration
-EXPO_PUBLIC_APP_NAME=하루하나
+EXPO_PUBLIC_APP_NAME=안녕
 EXPO_PUBLIC_APP_VERSION=1.0.0
 EXPO_PUBLIC_ENVIRONMENT=production
 
@@ -151,7 +151,7 @@ eas build:list
 #### 1. Apple Developer 설정
 1. [Apple Developer](https://developer.apple.com/) 계정 준비
 2. App Store Connect에서 새 앱 등록
-3. Bundle ID: `com.haruhana.app`
+3. Bundle ID: `com.welling.app`
 4. 앱 이름, 스크린샷, 설명 등 메타데이터 입력
 
 #### 2. EAS Submit으로 제출
@@ -168,7 +168,7 @@ eas submit --platform ios --latest
 #### 1. Google Play Console 설정
 1. [Google Play Console](https://play.google.com/console/) 계정 준비
 2. 새 앱 만들기
-3. Package name: `com.haruhana.app`
+3. Package name: `com.welling.app`
 4. 앱 콘텐츠, 스크린샷, 설명 등 작성
 
 #### 2. Service Account 키 생성
@@ -250,7 +250,7 @@ npm install @sentry/react-native
 문제가 발생하면 다음을 확인하세요:
 - [Expo 문서](https://docs.expo.dev/)
 - [Supabase 문서](https://supabase.com/docs)
-- [프로젝트 GitHub Issues](https://github.com/your-repo/haruhana/issues)
+- [프로젝트 GitHub Issues](https://github.com/your-repo/welling/issues)
 
 ---
 

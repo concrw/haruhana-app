@@ -1,4 +1,4 @@
--- 하루하나 (Haruhana) Database Schema
+-- 안녕 (WELLING) Database Schema
 -- Supabase PostgreSQL Schema
 
 -- Enable UUID extension

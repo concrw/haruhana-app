@@ -225,7 +225,7 @@ export default function RenewScreen() {
         <Text style={styles.disclaimer}>
           * 결제 후 즉시 구독이 시작됩니다{'\n'}
           * 구독 기간 종료 후 자동 갱신되지 않습니다{'\n'}
-          * 결제 관련 문의: help@haruhana.app
+          * 결제 관련 문의: help@welling.app
         </Text>
       </ScrollView>
 

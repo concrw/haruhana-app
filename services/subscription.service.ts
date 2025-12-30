@@ -59,7 +59,7 @@ export class SubscriptionService {
    */
   generateGiftLink(giftId: string): string {
     // 실제 앱 스키마로 변경 필요
-    return `haruhana://gift/${giftId}`;
+    return `welling://gift/${giftId}`;
   }
 
   /**
@@ -67,7 +67,7 @@ export class SubscriptionService {
    */
   generateWebGiftLink(giftId: string): string {
     // 실제 도메인으로 변경 필요
-    return `https://haruhana.app/gift/${giftId}`;
+    return `https://welling.app/gift/${giftId}`;
   }
 
   /**

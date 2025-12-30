@@ -1,8 +1,8 @@
-# 하루하나 (Haruhana) 🌸
+# 안녕 (WELLING) 🚶
 
-> **시니어를 위한 일상 의식과 인지 게임 앱**
+> **시니어를 위한 걷기 앱**
 
-하루하나는 시니어들이 건강한 일상 루틴을 유지하고 인지 능력을 향상시킬 수 있도록 돕는 모바일 애플리케이션입니다.
+안녕(WELLING)은 시니어들이 건강한 일상 루틴을 유지하고 인지 능력을 향상시킬 수 있도록 돕는 모바일 애플리케이션입니다.
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)](https://www.typescriptlang.org/)
 [![React Native](https://img.shields.io/badge/React_Native-0.76-purple)](https://reactnative.dev/)
@@ -65,7 +65,7 @@
 ## 📁 프로젝트 구조
 
 ```
-haruhana/
+welling/
 ├── app/                    # 화면 (Expo Router)
 │   ├── (tabs)/            # 탭 네비게이션
 │   ├── auth/              # 인증 화면
@@ -103,8 +103,8 @@ haruhana/
 ### 설치
 ```bash
 # 저장소 클론
-git clone https://github.com/your-username/haruhana.git
-cd haruhana
+git clone https://github.com/your-username/welling.git
+cd welling
 
 # 의존성 설치
 npm install --legacy-peer-deps
@@ -224,9 +224,9 @@ MIT License - 자세한 내용은 [LICENSE](LICENSE) 파일을 참조하세요.
 
 ## 📞 지원
 
-- 📧 Email: support@haruhana.app
-- 🌐 Website: https://haruhana.app
-- 📱 GitHub Issues: [github.com/your-username/haruhana/issues](https://github.com/your-username/haruhana/issues)
+- 📧 Email: support@welling.app
+- 🌐 Website: https://welling.app
+- 📱 GitHub Issues: [github.com/your-username/welling/issues](https://github.com/your-username/welling/issues)
 
 ---
 
