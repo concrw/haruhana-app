@@ -43,6 +43,15 @@ const GAMES = [
     color: COLORS.orange,
     benefit: '인지 유연성',
   },
+  {
+    id: 'dual-task',
+    title: '동시에 두 가지',
+    subtitle: 'Dual Task 게임',
+    description: '과일을 터치하면서\n개수도 세어요',
+    emoji: '🎯',
+    color: COLORS.greenApple,
+    benefit: '분할 주의력',
+  },
 ];
 
 export default function GameIndexScreen() {
