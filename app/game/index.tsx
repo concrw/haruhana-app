@@ -208,7 +208,7 @@ const styles = StyleSheet.create({
     color: COLORS.textBlack,
   },
   statLabel: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
     marginTop: LAYOUT.spacing.xs,
   },
@@ -243,7 +243,7 @@ const styles = StyleSheet.create({
     borderRadius: LAYOUT.radius.full,
   },
   benefitText: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     fontWeight: '600',
     color: COLORS.white,
   },

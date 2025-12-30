@@ -413,12 +413,12 @@ const styles = StyleSheet.create({
     color: COLORS.textDark,
   },
   planMonthly: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
     marginTop: LAYOUT.spacing.xs,
   },
   planSavings: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.greenApple,
     fontWeight: '600',
     marginTop: LAYOUT.spacing.xs,
@@ -444,12 +444,12 @@ const styles = StyleSheet.create({
     textAlignVertical: 'top',
   },
   inputHint: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
     marginTop: LAYOUT.spacing.sm,
   },
   charCount: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
     textAlign: 'right',
     marginTop: LAYOUT.spacing.xs,
@@ -495,7 +495,7 @@ const styles = StyleSheet.create({
     marginBottom: LAYOUT.spacing.xs,
   },
   presetText: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textDark,
     textAlign: 'center',
   },

@@ -261,7 +261,7 @@ const styles = StyleSheet.create({
     marginBottom: LAYOUT.spacing.xl,
   },
   currentStatusLabel: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
   },
   currentStatusExpiry: {
@@ -328,7 +328,7 @@ const styles = StyleSheet.create({
     color: COLORS.textDark,
   },
   planMonthly: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
     marginTop: LAYOUT.spacing.xs,
   },
@@ -435,9 +435,9 @@ const styles = StyleSheet.create({
     color: COLORS.apple,
   },
   disclaimer: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
-    lineHeight: TYPOGRAPHY.fontSize.sm * 1.6,
+    lineHeight: TYPOGRAPHY.fontSize.base * 1.6,
   },
   footer: {
     padding: LAYOUT.screenPaddingHorizontal,

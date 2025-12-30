@@ -243,7 +243,7 @@ const styles = StyleSheet.create({
     color: COLORS.textDark,
   },
   memberRole: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
     marginTop: LAYOUT.spacing.xs,
   },
@@ -257,7 +257,7 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.greenAppleLight,
   },
   statusText: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     fontWeight: '500',
     color: COLORS.textGray,
   },

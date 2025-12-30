@@ -230,7 +230,7 @@ const styles = StyleSheet.create({
   },
   badgeText: {
     color: COLORS.white,
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     fontWeight: '600',
   },
   scrollView: {
@@ -308,7 +308,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
   },
   moreCount: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     fontWeight: '600',
     color: COLORS.grape,
   },

@@ -281,7 +281,7 @@ const styles = StyleSheet.create({
     color: COLORS.white,
   },
   podiumName: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     fontWeight: '600',
     color: COLORS.textDark,
     marginBottom: LAYOUT.spacing.xs,
@@ -313,7 +313,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   legendText: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
   },
 });

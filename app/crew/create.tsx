@@ -341,7 +341,7 @@ const styles = StyleSheet.create({
     textAlignVertical: 'top',
   },
   hint: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
     textAlign: 'right',
     marginTop: LAYOUT.spacing.xs,
@@ -413,7 +413,7 @@ const styles = StyleSheet.create({
   },
   inviteHint: {
     marginTop: LAYOUT.spacing.xl,
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
     textAlign: 'center',
   },

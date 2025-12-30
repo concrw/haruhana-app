@@ -295,7 +295,7 @@ const styles = StyleSheet.create({
     marginVertical: LAYOUT.spacing.lg,
   },
   dateHeaderText: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
     backgroundColor: COLORS.backgroundLight,
     paddingVertical: LAYOUT.spacing.xs,
@@ -307,7 +307,7 @@ const styles = StyleSheet.create({
     marginVertical: LAYOUT.spacing.sm,
   },
   systemMessageText: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
     fontStyle: 'italic',
   },
@@ -339,7 +339,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   avatarText: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     fontWeight: '600',
     color: COLORS.white,
   },

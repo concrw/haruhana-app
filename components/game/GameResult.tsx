@@ -286,7 +286,7 @@ const styles = StyleSheet.create({
     color: COLORS.greenApple,
   },
   statLabel: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
     marginTop: LAYOUT.spacing.xs,
   },
@@ -327,7 +327,7 @@ const styles = StyleSheet.create({
     color: COLORS.textBlack,
   },
   accuracyLabel: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
   },
   reactionTimeMeter: {

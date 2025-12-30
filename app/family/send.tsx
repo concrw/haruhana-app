@@ -248,7 +248,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   quickText: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textBlack,
   },
   messageInput: {
@@ -261,7 +261,7 @@ const styles = StyleSheet.create({
     textAlignVertical: 'top',
   },
   charCount: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
     textAlign: 'right',
   },

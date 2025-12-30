@@ -308,11 +308,11 @@ const styles = StyleSheet.create({
     marginBottom: LAYOUT.spacing.xs,
   },
   ritualCategory: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
   },
   ritualDescription: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
   },
   removeButton: {

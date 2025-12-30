@@ -172,7 +172,7 @@ const styles = StyleSheet.create({
     paddingRight: LAYOUT.spacing.sm,
   },
   topLabel: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
     marginBottom: LAYOUT.spacing.xs,
     textAlign: 'right',

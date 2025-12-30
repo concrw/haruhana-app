@@ -235,7 +235,7 @@ const styles = StyleSheet.create({
     color: COLORS.textDark,
   },
   completeBadge: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     fontWeight: '600',
     color: COLORS.greenApple,
     backgroundColor: COLORS.greenAppleLight,
@@ -262,7 +262,7 @@ const styles = StyleSheet.create({
     color: COLORS.textDark,
   },
   goalLabel: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
   },
   goalAmount: {
@@ -292,12 +292,12 @@ const styles = StyleSheet.create({
     marginTop: LAYOUT.spacing.sm,
   },
   progressPercent: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     fontWeight: '600',
     color: COLORS.textDark,
   },
   remainingText: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
   },
   depositButton: {
@@ -382,7 +382,7 @@ const styles = StyleSheet.create({
     color: COLORS.textDark,
   },
   depositDate: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
     marginTop: LAYOUT.spacing.xs,
   },
@@ -410,7 +410,7 @@ const styles = StyleSheet.create({
     marginTop: LAYOUT.spacing.xs,
   },
   goalCardEstimate: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
     marginTop: LAYOUT.spacing.sm,
   },

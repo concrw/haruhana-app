@@ -287,7 +287,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   creatorBadge: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textDark,
     backgroundColor: COLORS.lemonLight,
     paddingVertical: LAYOUT.spacing.xs,
@@ -308,7 +308,7 @@ const styles = StyleSheet.create({
     borderTopColor: COLORS.backgroundLight,
   },
   inviteCodeLabel: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
   },
   inviteCode: {
@@ -361,7 +361,7 @@ const styles = StyleSheet.create({
     color: COLORS.textDark,
   },
   goalDescription: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
   },
   quickActions: {
@@ -381,7 +381,7 @@ const styles = StyleSheet.create({
     marginBottom: LAYOUT.spacing.xs,
   },
   actionLabel: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     fontWeight: '500',
     color: COLORS.textDark,
   },

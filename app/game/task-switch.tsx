@@ -523,7 +523,7 @@ const styles = StyleSheet.create({
     borderRadius: LAYOUT.radius.full,
   },
   trialBadgeText: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     fontWeight: '600',
     color: COLORS.white,
   },
@@ -642,7 +642,7 @@ const styles = StyleSheet.create({
     color: COLORS.textBlack,
   },
   statBoxLabel: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
     marginTop: LAYOUT.spacing.xs,
     textAlign: 'center',

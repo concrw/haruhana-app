@@ -448,12 +448,12 @@ const styles = StyleSheet.create({
     fontSize: 40,
   },
   exampleNumber: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
     marginTop: LAYOUT.spacing.xs,
   },
   matchLabel: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     fontWeight: '600',
     color: COLORS.grape,
     marginTop: LAYOUT.spacing.xs,
@@ -495,7 +495,7 @@ const styles = StyleSheet.create({
     borderRadius: LAYOUT.radius.full,
   },
   nBadgeText: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     fontWeight: '600',
     color: COLORS.white,
   },

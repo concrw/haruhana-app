@@ -137,7 +137,7 @@ const styles = StyleSheet.create({
     color: COLORS.textBlack,
   },
   hint: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
     textAlign: 'right',
   },

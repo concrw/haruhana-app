@@ -426,7 +426,7 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.error,
   },
   recordingLabel: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.error,
     fontWeight: '700',
   },

@@ -216,7 +216,7 @@ const styles = StyleSheet.create({
     color: COLORS.textDark,
   },
   expiryLabel: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
     marginBottom: LAYOUT.spacing.xs,
   },
@@ -241,7 +241,7 @@ const styles = StyleSheet.create({
     gap: LAYOUT.spacing.md,
   },
   expiryWarningText: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textDark,
     flex: 1,
   },
@@ -250,7 +250,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: LAYOUT.spacing.md,
   },
   renewLinkText: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.grape,
     fontWeight: '600',
   },
@@ -304,7 +304,7 @@ const styles = StyleSheet.create({
     color: COLORS.textDark,
   },
   featureDescription: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
     marginTop: LAYOUT.spacing.xs,
   },

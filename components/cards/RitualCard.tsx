@@ -203,7 +203,7 @@ const styles = StyleSheet.create({
     color: COLORS.textGray,
   },
   duration: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textLight,
   },
   statusContainer: {
@@ -233,7 +233,7 @@ const styles = StyleSheet.create({
     marginBottom: LAYOUT.spacing.xs,
   },
   statusText: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     fontWeight: '500',
   },
 
@@ -260,7 +260,7 @@ const styles = StyleSheet.create({
     textDecorationLine: 'line-through',
   },
   compactTime: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
   },
   compactCheck: {
@@ -303,7 +303,7 @@ const styles = StyleSheet.create({
     borderRadius: LAYOUT.radius.sm,
   },
   featureCheckText: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     fontWeight: '700',
     color: COLORS.greenApple,
   },

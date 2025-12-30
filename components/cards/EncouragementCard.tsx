@@ -301,7 +301,7 @@ const styles = StyleSheet.create({
     marginBottom: LAYOUT.spacing.sm,
   },
   time: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textLight,
   },
 
@@ -337,7 +337,7 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: LAYOUT.radius.xs,
   },
   previewName: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     fontWeight: '600',
     color: COLORS.textGray,
     marginBottom: LAYOUT.spacing.xs,

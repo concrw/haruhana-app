@@ -363,7 +363,7 @@ const styles = StyleSheet.create({
     color: COLORS.textDark,
   },
   lastActivity: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
     marginTop: LAYOUT.spacing.xs,
   },
@@ -428,7 +428,7 @@ const styles = StyleSheet.create({
     color: COLORS.textDark,
   },
   gridLabel: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
     marginTop: LAYOUT.spacing.xs,
   },
@@ -466,7 +466,7 @@ const styles = StyleSheet.create({
     color: COLORS.textDark,
   },
   reportStatLabel: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
     marginTop: LAYOUT.spacing.xs,
   },
@@ -476,7 +476,7 @@ const styles = StyleSheet.create({
     gap: LAYOUT.spacing.xs,
   },
   trendText: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     fontWeight: '600',
   },
   reportFooter: {

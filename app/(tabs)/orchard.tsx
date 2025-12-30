@@ -235,7 +235,7 @@ const styles = StyleSheet.create({
     color: COLORS.greenApple,
   },
   progressLabel: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
   },
   progressInfo: {

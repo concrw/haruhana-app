@@ -154,7 +154,7 @@ const styles = StyleSheet.create({
     transform: [{ scale: 1.1 }],
   },
   moodLabel: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
     textAlign: 'center',
   },

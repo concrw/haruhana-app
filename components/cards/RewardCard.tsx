@@ -264,7 +264,7 @@ const styles = StyleSheet.create({
     opacity: 0.5,
   },
   title: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     fontWeight: '600',
     color: COLORS.white,
     textAlign: 'center',
@@ -321,12 +321,12 @@ const styles = StyleSheet.create({
     borderRadius: LAYOUT.radius.full,
   },
   recordText: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     fontWeight: '600',
     color: COLORS.orange,
   },
   longestStreak: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.white,
     opacity: 0.8,
   },

@@ -166,7 +166,7 @@ const styles = StyleSheet.create({
     borderRadius: LAYOUT.radius.full,
   },
   trialText: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     fontWeight: '600',
     color: COLORS.white,
   },
@@ -188,7 +188,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   scoreLabel: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
     marginBottom: LAYOUT.spacing.xs,
   },
@@ -236,7 +236,7 @@ const styles = StyleSheet.create({
     gap: LAYOUT.spacing.sm,
   },
   targetLabel: {
-    fontSize: TYPOGRAPHY.fontSize.sm,
+    fontSize: TYPOGRAPHY.fontSize.base,
     color: COLORS.textGray,
   },
   targetBadge: {
